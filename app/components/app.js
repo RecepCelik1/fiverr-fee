@@ -37,13 +37,13 @@ const App = () => {
         <div className="w-full flex flex-col sm:flex-row mt-4">
             <div className="w-full flex flex-col">
                 <div className="text-2xl gabarito-bold">With Fiverr you’ll make :</div>
-                <div className="text-2xl gabarito flex justify-start overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '160px', overflow: 'hidden' }}>
+                <div className="text-2xl gabarito flex justify-start overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '250px', overflow: 'hidden' }}>
                 {formatNumberWithCommas((money - fiverrFee) === 0 ? '-' : `$ ${(money - fiverrFee).toFixed(2)}`)}
                 </div>
             </div>
             <div className="w-full flex flex-col">
                 <div className="text-2xl gabarito-bold text-red-600">Because Fiverr takes :</div>
-                <div className="text-2xl gabarito flex justify-start overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '160px', overflow: 'hidden' }}>
+                <div className="text-2xl gabarito flex justify-start overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '250px', overflow: 'hidden' }}>
                 {formatNumberWithCommas(fiverrFee === 0 ? '-' : `$ ${fiverrFee.toFixed(2)}`)}
                 </div>
             </div>
